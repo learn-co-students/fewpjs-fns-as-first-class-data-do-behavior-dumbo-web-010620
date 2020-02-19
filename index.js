@@ -9,11 +9,15 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 
-function greet(timeStr) {
-  const hour = parseInt(timeStr, 10);
-    if ( hour < 12) return "Good Morning"
-    if ( hour > 17) return "Good Evening"
-  return "Good Afternoon"
+function greet(timeString) {
+  const time = parseInt(timeString)
+    if (time < 12) {
+      return "Good Morning"
+    } else if (time > 17) {
+      return "Good Evening"
+    } else {
+      return "Good Afternoon"
+    }
 }
 
 /* Write your implementation of displayMessage() */
