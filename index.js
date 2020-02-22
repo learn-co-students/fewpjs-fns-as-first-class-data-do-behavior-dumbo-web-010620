@@ -8,4 +8,19 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+const greet = timeString => {
+  const time = timeString.split(":");
+  const hour = Number(time[0])
+
+  if (hour < 12) {
+    return "Good Morning"
+  } else if(hour > 17) {
+    return "Good Evening"
+  } else {
+    return "Good Afternoon"
+  }
+}
 /* Write your implementation of displayMessage() */
+const displayMessage =  (message) => {
+  document.getElementById("greeting").innerText = message;
+}
